@@ -1,0 +1,11 @@
+# Documentos personales (no publicar)
+CV Y CARTA PRESENTACION/
+*.pdf
+*.docx
+
+# Sistema
+.freebuff/
+Thumbs.db
+Desktop.ini
+__pycache__/
+*.pyc
