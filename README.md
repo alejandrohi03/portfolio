@@ -22,6 +22,11 @@ Trabajo con los módulos de **almacén, terceros, ventas, compras, contabilidad 
 - **Móvil:** Xamarin, Android Studio
 - **Otros:** Git, Plastic SCM, Mantis, Visual Studio
 
+## Proyectos
+
+- **[Lino Jardinería](https://jardineria-lino.vercel.app/)** — Web corporativa para un negocio real de jardinería en Castilla-La Mancha. Una sola página con galería de trabajos en vídeo, SEO local (schema.org LocalBusiness + FAQPage), Open Graph, sitemap y diseño orientado a conversión de llamadas en móvil. Desplegada en Vercel.
+- **[Este portfolio](https://alejandrohi03.github.io/portfolio/)** — Página única en HTML, CSS y JavaScript sin frameworks ni build. Iconos y fuentes servidos en local.
+
 ## Sobre este portfolio
 
 Una sola página en HTML, CSS y JavaScript sin frameworks ni dependencias externas en runtime (los iconos están servidos en local). Pensado para cargar rápido y leerse bien en móvil.
