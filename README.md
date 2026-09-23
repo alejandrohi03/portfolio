@@ -1,70 +1,43 @@
-# 👨‍💻 Alejandro Hidalgo Izquierdo — Portfolio
+# Alejandro Hidalgo Izquierdo
 
-> 🌐 **Ver web en vivo:** [https://alejandrohi03.github.io/portfolio/](https://alejandrohi03.github.io/portfolio/)
+**[Ver portfolio →](https://alejandrohi03.github.io/portfolio/)**
 
-Portfolio personal de **Alejandro Hidalgo Izquierdo**, Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM), con experiencia en el desarrollo y soporte de software empresarial en entornos **ERP y WMS**.
+Técnico Superior en DAM (desarrollo de aplicaciones multiplataforma). Actualmente desarrollo y mantengo un ERP empresarial en **C# y .NET Framework**, con SQL Server como base de datos.
 
----
+## A qué me dedico
 
-## 📋 Sobre mí
+Trabajo con los módulos de **almacén, terceros, ventas, compras, contabilidad y MRP**. Mi día a día:
 
-- 🎓 Técnico Superior en DAM (2022–2024)
-- 💼 Desarrollador Software ERP (.NET) en Defisoft
-- 📍 El Toboso, Toledo (España)
-- 🎯 Desarrollo de software, soporte técnico, consultoría funcional e implantación de soluciones empresariales
+- Gestionar el soporte de usuarios del ERP
+- Resolver las mejoras que llegan por Mantis
+- Reportar bugs y errores que detecto en el sistema
+- Limpiar, refactorizar y optimizar código existente
+- Proponer alternativas de implementación, priorizando soluciones **escalables y configurables por el propio usuario**
 
-## 🛠️ Tecnologías
+## Stack
 
-| Categoría | Tecnologías |
-|-----------|-------------|
-| **Lenguajes** | C#, Java |
-| **Frameworks / UI** | .NET Framework, WinForms, DevExpress, Xamarin |
-| **Datos** | SQL Server, Entity Framework, LINQ, Procedimientos almacenados |
-| **Móvil** | Xamarin, Android Studio (Java) |
-| **Herramientas** | Git, Plastic SCM, Visual Studio |
+- **Lenguajes:** C#, Java
+- **Escritorio:** .NET Framework, WinForms, DevExpress
+- **Datos:** SQL Server, Entity Framework, LINQ, procedimientos almacenados
+- **Móvil:** Xamarin, Android Studio
+- **Otros:** Git, Plastic SCM, Mantis, Visual Studio
 
-## ✨ Características del portfolio
+## Sobre este portfolio
 
-- 🎨 Diseño moderno en tema oscuro con degradados azul/turquesa
-- 📸 Foto de perfil optimizada (27 KB, carga instantánea)
-- ⌨️ Efecto máquina de escribir animado en el hero
-- 📱 100% responsive con menú hamburguesa para móvil
-- 🧩 Iconos profesionales (Bootstrap Icons) servidos localmente
-- 🎬 Animaciones de aparición al hacer scroll (Intersection Observer)
-- 📄 Botón de contacto directo por email
-
-## 📁 Estructura del proyecto
+Una sola página en HTML, CSS y JavaScript sin frameworks ni dependencias externas en runtime (los iconos están servidos en local). Pensado para cargar rápido y leerse bien en móvil.
 
 ```
 portfolio/
-├── index.html              # Página principal (una sola página)
-├── styles.css              # Estilos y diseño responsive
-├── script.js               # Interacciones JS (typewriter, menú, reveal)
-└── assets/
-    ├── foto-perfil.jpg     # Foto de perfil optimizada
-    ├── favicon.svg         # Favicon personalizado
-    ├── bootstrap-icons.css # Pack de iconos (CSS)
-    └── fonts/              # Fuentes de los iconos (woff/woff2)
+├── index.html
+├── styles.css
+├── script.js
+└── assets/          # foto, favicon e iconos
 ```
 
-## 🚀 Ejecutar en local
+Para probarlo en local: `python -m http.server 8080` y abrir `http://localhost:8080`.
 
-No necesita dependencias ni build. Basta con abrir `index.html` en el navegador, o servir la carpeta con cualquier servidor estático:
+## Contacto
 
-```bash
-# Con Python
-python -m http.server 8080
-
-# Luego abre http://localhost:8080
-```
-
-## 📬 Contacto
-
-[![Email](https://img.shields.io/badge/Email-alejan__hi%40hotmail.com-blue?style=flat-square&logo=gmail&logoColor=white)](mailto:alejan_hi@hotmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-alejandro--hidalgo--izquierdo-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alejandro-hidalgo-izquierdo)
-[![GitHub](https://img.shields.io/badge/GitHub-alejandrohi03-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/alejandrohi03)
-[![Teléfono](https://img.shields.io/badge/Tel%C3%A9fono-%2B34%20633%20096%20127-25D366?style=flat-square&logo=whatsapp&logoColor=white)](tel:+34633096127)
-
----
-
-⭐ Si te gusta el diseño, ¡deja una estrella en el repo!
+- **Email:** alejan_hi@hotmail.com
+- **LinkedIn:** [alejandro-hidalgo-izquierdo](https://www.linkedin.com/in/alejandro-hidalgo-izquierdo)
+- **GitHub:** [alejandrohi03](https://github.com/alejandrohi03)
