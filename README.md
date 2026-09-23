@@ -24,8 +24,10 @@ Trabajo con los módulos de **almacén, terceros, ventas, compras, contabilidad 
 
 ## Proyectos
 
+- **[AH-Trainer](https://ah-trainer.com/)** — Web para un entrenador personal online, publicada con dominio propio. Next.js + Vercel.
+- **[La Competencia](https://compe-restaurante.vercel.app/)** — Web de restaurante y pizzería artesanal con carta digital. Next.js + Vercel.
 - **[Lino Jardinería](https://jardineria-lino.vercel.app/)** — Web corporativa para un negocio real de jardinería en Castilla-La Mancha. Una sola página con galería de trabajos en vídeo, SEO local (schema.org LocalBusiness + FAQPage), Open Graph, sitemap y diseño orientado a conversión de llamadas en móvil. Desplegada en Vercel.
-- **[Este portfolio](https://alejandrohi03.github.io/portfolio/)** — Página única en HTML, CSS y JavaScript sin frameworks ni build. Iconos y fuentes servidos en local.
+- **[MesaFlow POS](https://github.com/alejandrohi03/mesaflow-pos)** — TPV para bares y restaurantes: mapa de mesas, comandas por líneas, pantalla de cocina y vista PDA de camarero. React, TypeScript y Vite, con sincronización opcional vía Supabase.
 
 ## Sobre este portfolio
 
