@@ -27,6 +27,7 @@ Trabajo con los módulos de **almacén, terceros, ventas, compras, contabilidad 
 - **[AH-Trainer](https://ah-trainer.com/)** — Web para un entrenador personal online, publicada con dominio propio. Next.js + Vercel.
 - **[La Competencia](https://compe-restaurante.vercel.app/)** — Web de restaurante y pizzería artesanal con carta digital. Next.js + Vercel.
 - **[Lino Jardinería](https://jardineria-lino.vercel.app/)** — Web corporativa para un negocio real de jardinería en Castilla-La Mancha. Una sola página con galería de trabajos en vídeo, SEO local (schema.org LocalBusiness + FAQPage), Open Graph, sitemap y diseño orientado a conversión de llamadas en móvil. Desplegada en Vercel.
+- **[Método MAC-OS](https://metodo-mac-os.vercel.app/)** — Landing de conversión para un coach de fitness: reserva de llamadas en Calendly y contacto por WhatsApp. Vídeo de presentación alojado en el propio dominio tras una fachada clicable (sin cookies de terceros), menú fijo, animaciones al bajar, Google Analytics 4 con banner de consentimiento RGPD y atribución UTM de los clics a Calendly. HTML y CSS en línea, sin frameworks. Desplegada en Vercel. (El dominio propio metodomacos.com queda pendiente de configurar.)
 - **[MesaFlow POS](https://github.com/alejandrohi03/mesaflow-pos)** — TPV para bares y restaurantes: mapa de mesas, comandas por líneas, pantalla de cocina y vista PDA de camarero. React, TypeScript y Vite, con sincronización opcional vía Supabase.
 
 ## Sobre este portfolio
