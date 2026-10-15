@@ -2,16 +2,16 @@
 
 **[Ver portfolio →](https://alejandrohi03.github.io/portfolio/)**
 
-Técnico Superior en DAM (desarrollo de aplicaciones multiplataforma). Actualmente desarrollo y mantengo un ERP empresarial en **C# y .NET Framework**, con SQL Server como base de datos.
+Técnico Superior en DAM (desarrollo de aplicaciones multiplataforma). Desarrollo **software**: aplicaciones de escritorio, móviles y web, principalmente con **C#, .NET y SQL Server**.
 
 ## A qué me dedico
 
-Trabajo con los módulos de **almacén, terceros, ventas, compras, contabilidad y MRP**. Mi día a día:
+Escribo y mantengo aplicaciones; ahora mismo, buena parte de ese trabajo es un **ERP empresarial** en C# y .NET Framework. Mi día a día:
 
-- Gestionar el soporte de usuarios del ERP
-- Resolver las mejoras que llegan por Mantis
+- Desarrollar las nuevas funcionalidades que llegan por Mantis
 - Reportar bugs y errores que detecto en el sistema
 - Limpiar, refactorizar y optimizar código existente
+- Mantener y dar soporte al software que está en producción
 - Proponer alternativas de implementación, priorizando soluciones **escalables y configurables por el propio usuario**
 
 ## Stack
@@ -34,7 +34,7 @@ Trabajo con los módulos de **almacén, terceros, ventas, compras, contabilidad 
 
 Una sola página en HTML, CSS y JavaScript, sin frameworks ni dependencias externas en runtime: los iconos y las tipografías están servidos en local.
 
-El diseño parte de una idea: el portfolio se lee como la documentación de un sistema en producción. Papel técnico claro con un único acento cobalto, títulos en **Space Grotesk**, texto en **IBM Plex Sans** y datos (fechas, módulos, estados) en **IBM Plex Mono**. El elemento focal es el panel oscuro del hero con los seis módulos del ERP que mantengo.
+El diseño parte de una idea: el portfolio se lee como la documentación de un sistema en producción. Papel técnico claro con un único acento cobalto, títulos en **Space Grotesk**, texto en **IBM Plex Sans** y datos (fechas, tecnologías, estados) en **IBM Plex Mono**. El elemento focal es el panel oscuro del hero con las áreas de desarrollo en las que trabajo.
 
 ```
 portfolio/
