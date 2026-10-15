@@ -32,15 +32,21 @@ Trabajo con los módulos de **almacén, terceros, ventas, compras, contabilidad 
 
 ## Sobre este portfolio
 
-Una sola página en HTML, CSS y JavaScript sin frameworks ni dependencias externas en runtime (los iconos están servidos en local). Pensado para cargar rápido y leerse bien en móvil.
+Una sola página en HTML, CSS y JavaScript, sin frameworks ni dependencias externas en runtime: los iconos y las tipografías están servidos en local.
+
+El diseño parte de una idea: el portfolio se lee como la documentación de un sistema en producción. Papel técnico claro con un único acento cobalto, títulos en **Space Grotesk**, texto en **IBM Plex Sans** y datos (fechas, módulos, estados) en **IBM Plex Mono**. El elemento focal es el panel oscuro del hero con los seis módulos del ERP que mantengo.
 
 ```
 portfolio/
 ├── index.html
 ├── styles.css
 ├── script.js
-└── assets/          # foto, favicon e iconos
+└── assets/           # foto, favicon e iconos
+    ├── fonts.css
+    └── fonts/        # woff2 de Space Grotesk, IBM Plex Sans e IBM Plex Mono
 ```
+
+Las tipografías se descargan una sola vez con `assets/fonts/fetch_fonts.py` y se sirven desde el propio dominio, así que no se llama a Google Fonts en tiempo de ejecución.
 
 Para probarlo en local: `python -m http.server 8080` y abrir `http://localhost:8080`.
 

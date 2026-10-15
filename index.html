@@ -3,19 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio de Alejandro Hidalgo Izquierdo, técnico DAM con experiencia en desarrollo y soporte de software empresarial: ERP, WMS, .NET, C# y Java." />
-  <title>Alejandro Hidalgo Izquierdo | Técnico DAM · Software ERP y WMS</title>
+  <meta name="description" content="Portfolio de Alejandro Hidalgo Izquierdo, técnico DAM que desarrolla y mantiene un ERP empresarial: almacén, terceros, ventas, compras, contabilidad y MRP con C#, .NET y SQL Server." />
+  <meta name="theme-color" content="#ECEDEF" />
+  <title>Alejandro Hidalgo Izquierdo | Desarrollador .NET · Software ERP</title>
+  <link rel="stylesheet" href="assets/fonts.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="assets/bootstrap-icons.css" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Solo con JS activo se ocultan los elementos hasta revelarlos: sin JS, todo visible. -->
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
+  <a class="skip-link" href="#sobre-mi">Saltar al contenido</a>
+
   <!-- ===== NAVEGACIÓN ===== -->
   <header class="navbar" id="inicio">
-    <nav class="nav-container">
+    <nav class="nav-container" aria-label="Principal">
       <a href="#inicio" class="logo">AH<span class="logo-dot">.</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú"><i class="bi bi-list"></i></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <i class="bi bi-list" aria-hidden="true"></i>
+      </button>
       <ul class="nav-menu" id="navMenu">
         <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
         <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
@@ -27,292 +35,375 @@
     </nav>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="hero-content">
-      <img src="assets/foto-perfil.jpg" alt="Foto de Alejandro Hidalgo Izquierdo" class="hero-photo" />
-      <h1 class="hero-name">Alejandro Hidalgo Izquierdo</h1>
-      <h2 class="hero-role">Desarrollador .NET · Software ERP</h2>      <p class="hero-description">
-        Desarrollo y mantengo un ERP empresarial: almacén, ventas, compras, contabilidad y MRP.
-        C#, .NET, SQL Server.
-      </p>
-      <div class="hero-buttons">
-        <a href="#contacto" class="btn btn-primary">Contactar</a>
-        <a href="#experiencia" class="btn btn-outline">Ver experiencia</a>
-      </div>
-      <div class="hero-social">
-        <a href="https://github.com/alejandrohi03" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-        <a href="https://www.linkedin.com/in/alejandro-hidalgo-izquierdo" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-        <a href="mailto:alejan_hi@hotmail.com" aria-label="Email">Email</a>
-      </div>
-    </div>
-    <a href="#sobre-mi" class="scroll-down" aria-label="Bajar"><i class="bi bi-chevron-double-down"></i></a>
-  </section>
-
-  <!-- ===== SOBRE MÍ ===== -->
-  <section class="section" id="sobre-mi">
-    <div class="container">
-      <h2 class="section-title">Sobre mí</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Soy <strong>Alejandro Hidalgo Izquierdo</strong>, técnico superior en DAM.
-            Trabajo desarrollando y dando soporte a un <strong>ERP empresarial</strong>: atiendo a
-            usuarios, resuelvo las mejoras que llegan por Mantis y mantengo los módulos de
-            <strong>almacén, terceros, ventas, compras, contabilidad y MRP</strong>.
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-lead">
+          <p class="identity">
+            <img src="assets/foto-perfil.jpg" alt="Alejandro Hidalgo Izquierdo" class="identity-photo" />
+            <span>Alejandro Hidalgo Izquierdo · <span class="identity-role">Desarrollador .NET</span></span>
           </p>
-          <p>
-            Más allá de cerrar tickets, <strong>reporto bugs que detecto, limpio y refactorizo
-            código existente</strong> y optimizo lo que ya está escrito. Cuando me toca implementar
-            una mejora, <strong>propongo alternativas</strong> pensando en que la solución sea
-            escalable y, sobre todo, <strong>configurable por el propio usuario</strong>, para no
-            tener que tocar código cada vez que el cliente quiera funcionar distinto.
+          <h1 class="hero-name">Desarrollo y mantengo un ERP empresarial</h1>
+          <p class="hero-description">
+            Técnico superior en DAM. Desarrollo y mantengo un ERP empresarial en C#, .NET y SQL Server:
+            almacén, terceros, ventas, compras, contabilidad y MRP.
           </p>
-        </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <span class="stat-number">6</span>
-            <span class="stat-label">módulos ERP que mantengo: almacén, terceros, ventas, compras, contabilidad y MRP</span>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary">Contactar</a>
+            <a href="#experiencia" class="btn btn-ghost">Ver experiencia</a>
           </div>
-          <div class="stat-card">
-            <span class="stat-number">2</span>
-            <span class="stat-label">carreras paralelas: 3 años de hostelería pagando mis estudios de desarrollo</span>
-          </div>
+          <ul class="hero-social">
+            <li><a href="https://github.com/alejandrohi03" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/alejandro-hidalgo-izquierdo" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:alejan_hi@hotmail.com">Email</a></li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== EXPERIENCIA ===== -->
-  <section class="section section-alt" id="experiencia">
-    <div class="container">
-      <h2 class="section-title">Experiencia laboral</h2>
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Julio 2024 — Actualidad</span>
-            <h3>Desarrollador Software ERP (.NET)</h3>
-            <h4>Defisoft</h4>
-            <p>
-              Desarrollo y soporte del ERP: gestiono las <strong>mejoras que llegan por Mantis</strong>
-              sobre los módulos de <strong>almacén, terceros, ventas, compras, contabilidad y MRP</strong>.
-              Además de las tareas asignadas, reporto bugs que detecto, limpio y refactorizo código
-              existente, y propongo alternativas <strong>escalables y configurables por el usuario</strong>.
+        <!-- El elemento central: el sistema que mantiene -->
+        <aside class="panel" aria-label="Módulos del ERP que mantengo">
+          <header class="panel-head">
+            <h2 class="panel-title">Módulos en producción</h2>
+            <span class="panel-tag">ERP · Defisoft</span>
+          </header>
+          <ul class="panel-list">
+            <li class="panel-row"><span class="panel-dot"></span><span class="panel-name">Almacén</span><span class="panel-note">existencias y movimientos</span></li>
+            <li class="panel-row"><span class="panel-dot"></span><span class="panel-name">Terceros</span><span class="panel-note">clientes y proveedores</span></li>
+            <li class="panel-row"><span class="panel-dot"></span><span class="panel-name">Ventas</span><span class="panel-note">presupuestos, pedidos y facturas</span></li>
+            <li class="panel-row"><span class="panel-dot"></span><span class="panel-name">Compras</span><span class="panel-note">pedidos a proveedor</span></li>
+            <li class="panel-row"><span class="panel-dot"></span><span class="panel-name">Contabilidad</span><span class="panel-note">asientos y cierres</span></li>
+            <li class="panel-row"><span class="panel-dot"></span><span class="panel-name">MRP</span><span class="panel-note">planificación de materiales</span></li>
+          </ul>
+          <footer class="panel-foot">
+            <span class="panel-count">06</span>
+            <span>módulos bajo mi mantenimiento</span>
+          </footer>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-rail">
+            <h2 class="section-title">Sobre mí</h2>
+          </div>
+          <div class="section-body">
+            <p class="lede">
+              Trabajo desarrollando y dando soporte a un <strong>ERP empresarial</strong>: atiendo a los
+              usuarios, resuelvo las mejoras que llegan por Mantis y mantengo los módulos de
+              <strong>almacén, terceros, ventas, compras, contabilidad y MRP</strong>.
             </p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Abril 2024 — Junio 2024</span>
-            <h3>Desarrollador Xamarin (Prácticas)</h3>
-            <h4>Madinsa</h4>
             <p>
-              Desarrollo de aplicaciones móviles <strong>multiplataforma con Xamarin y C#</strong>,
-              aplicando los conocimientos adquiridos durante el ciclo formativo DAM en un entorno real.
+              Más allá de cerrar tickets, reporto bugs que detecto, limpio y refactorizo código existente
+              y optimizo lo que ya está escrito. Cuando me toca implementar una mejora, propongo
+              alternativas pensando en que la solución sea escalable y, sobre todo,
+              <strong>configurable por el propio usuario</strong>, para no tener que tocar código cada vez
+              que el cliente quiera funcionar distinto.
             </p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Junio 2021 — Abril 2024</span>
-            <h3>Camarero</h3>
-            <h4>Hostal Restaurante Dulcinea</h4>
-            <p>
-              Atención al público, trabajo en equipo y gestión de la presión en temporada alta.
-              Una etapa que me enseñó <strong>responsabilidad, trato con el cliente y constancia</strong>:
-              competencias que aplico también como desarrollador.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Formación</span>
-            <h3>Proyectos académicos</h3>
-            <h4>Ciclo DAM</h4>
-            <p>
-              Desarrollo de aplicaciones <strong>Android con Java y Android Studio</strong>,
-              aplicaciones multiplataforma con <strong>Xamarin</strong> y trabajo con
-              <strong>bases de datos</strong> (creación y manipulación).
-            </p>
+            <ul class="aportes">
+              <li>Reporto los bugs que detecto antes de que lleguen al usuario.</li>
+              <li>Refactorizo y limpio código existente, no solo añado funcionalidad.</li>
+              <li>Propongo alternativas configurables por el usuario, no parches.</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FORMACIÓN ===== -->
-  <section class="section" id="formacion">
-    <div class="container">
-      <h2 class="section-title">Formación</h2>
-      <div class="cards-grid">
-        <div class="card reveal">
-          <div class="card-icon"><i class="bi bi-mortarboard-fill"></i></div>
-          <span class="timeline-date">2022 — 2024</span>
-          <h3>Técnico Superior en DAM</h3>
-          <p>Desarrollo de Aplicaciones Multiplataforma, con especial foco en Java, .NET, bases de datos y desarrollo móvil.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon"><i class="bi bi-book-fill"></i></div>
-          <span class="timeline-date">2019 — 2022</span>
-          <h3>Bachillerato</h3>
-          <p>IES Infante don Fadrique. Base académica en matemáticas, tecnología e informática.</p>
-        </div>
-        <div class="card reveal">
-          <div class="card-icon"><i class="bi bi-globe-americas"></i></div>
-          <span class="timeline-date">Idiomas</span>
-          <h3>Inglés — Nivel A1</h3>
-          <p>Nivel básico de inglés, en proceso de mejora continua.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== HABILIDADES ===== -->
-  <section class="section section-alt" id="habilidades">
-    <div class="container">
-      <h2 class="section-title">Habilidades</h2>
-      <div class="skills-wrapper">
-        <div class="skills-group reveal">
-          <h3><i class="bi bi-code-slash"></i> Lenguajes y frameworks</h3>
-          <div class="skill-tags">
-            <span class="tag tag-highlight">C#</span>
-            <span class="tag tag-highlight">.NET Framework</span>
-            <span class="tag tag-highlight">Java</span>
-            <span class="tag">WinForms</span>
-            <span class="tag">DevExpress</span>
-            <span class="tag">Xamarin</span>
-            <span class="tag">Android Studio</span>
+    <!-- ===== EXPERIENCIA ===== -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-rail">
+            <h2 class="section-title">Experiencia</h2>
+            <p class="rail-note">De la hostelería al desarrollo, sin atajos.</p>
           </div>
-        </div>
-        <div class="skills-group reveal">
-          <h3><i class="bi bi-database-fill-gear"></i> Datos y herramientas</h3>
-          <div class="skill-tags">
-            <span class="tag tag-highlight">SQL Server</span>
-            <span class="tag tag-highlight">Entity Framework</span>
-            <span class="tag">LINQ</span>
-            <span class="tag">Procedimientos almacenados</span>
-            <span class="tag">Git</span>
-            <span class="tag">Plastic SCM</span>
-            <span class="tag">Visual Studio</span>
-          </div>
-        </div>
-        <div class="skills-group reveal">
-          <h3><i class="bi bi-people-fill"></i> Competencias personales</h3>
-          <div class="skill-tags">
-            <span class="tag">Capacidad analítica</span>
-            <span class="tag">Mejora continua</span>
-            <span class="tag">Atención al cliente</span>
-            <span class="tag">Comunicación</span>
-            <span class="tag">Trabajo en equipo</span>
-            <span class="tag">Resolución de problemas</span>
+          <div class="section-body">
+            <ol class="log">
+              <li class="log-item reveal">
+                <p class="log-date">Jul 2024 — actualidad</p>
+                <div class="log-main">
+                  <h3>Desarrollador de software ERP</h3>
+                  <p class="log-org">Defisoft · C#, .NET, SQL Server</p>
+                  <p>
+                    Desarrollo y soporte del ERP: gestiono las mejoras que llegan por Mantis sobre los
+                    módulos de almacén, terceros, ventas, compras, contabilidad y MRP. Además de las
+                    tareas asignadas, reporto bugs que detecto, refactorizo código existente y propongo
+                    alternativas escalables y configurables por el usuario.
+                  </p>
+                </div>
+              </li>
+              <li class="log-item reveal">
+                <p class="log-date">Abr 2024 — jun 2024</p>
+                <div class="log-main">
+                  <h3>Desarrollador Xamarin</h3>
+                  <p class="log-org">Madinsa · prácticas</p>
+                  <p>
+                    Desarrollo de aplicaciones móviles multiplataforma con Xamarin y C#, aplicando en un
+                    entorno real lo aprendido en el ciclo DAM.
+                  </p>
+                </div>
+              </li>
+              <li class="log-item reveal">
+                <p class="log-date">Jun 2021 — abr 2024</p>
+                <div class="log-main">
+                  <h3>Camarero</h3>
+                  <p class="log-org">Hostal Restaurante Dulcinea</p>
+                  <p>
+                    Atención al público, trabajo en equipo y gestión de la presión en temporada alta.
+                    Una etapa que me enseñó responsabilidad, trato con el cliente y constancia:
+                    competencias que aplico también como desarrollador.
+                  </p>
+                </div>
+              </li>
+              <li class="log-item reveal">
+                <p class="log-date">2022 — 2024</p>
+                <div class="log-main">
+                  <h3>Proyectos académicos</h3>
+                  <p class="log-org">Ciclo DAM</p>
+                  <p>
+                    Aplicaciones Android con Java y Android Studio, aplicaciones multiplataforma con
+                    Xamarin y trabajo con bases de datos: creación y manipulación.
+                  </p>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== PROYECTOS ===== -->
-  <section class="section" id="proyectos">
-    <div class="container">
-      <h2 class="section-title">Proyectos</h2>
-      <div class="projects-grid">
-        <a class="project-card reveal" href="https://ah-trainer.com/" target="_blank" rel="noopener">
-          <div class="project-tag">En producción · Dominio propio</div>
-          <h3>AH-Trainer</h3>
-          <p>
-            Web para un entrenador personal online, publicada con dominio propio.
-            Next.js y despliegue en Vercel.
-          </p>
-          <span class="project-link">ah-trainer.com <i class="bi bi-box-arrow-up-right"></i></span>
-        </a>
-        <a class="project-card reveal" href="https://compe-restaurante.vercel.app/" target="_blank" rel="noopener">
-          <div class="project-tag">En producción · Vercel</div>
-          <h3>La Competencia</h3>
-          <p>
-            Web de restaurante y pizzería artesanal con carta digital.
-            Next.js y despliegue en Vercel.
-          </p>
-          <span class="project-link">compe-restaurante.vercel.app <i class="bi bi-box-arrow-up-right"></i></span>
-        </a>
-        <a class="project-card reveal" href="https://jardineria-lino.vercel.app/" target="_blank" rel="noopener">
-          <div class="project-tag">En producción · Vercel</div>
-          <h3>Lino Jardinería</h3>
-          <p>
-            Web corporativa para un negocio real de jardinería en Castilla-La Mancha:
-            galería de trabajos en vídeo, FAQ con datos estructurados (schema.org),
-            SEO local, Open Graph, sitemap y barra de llamada fija en móvil.
-          </p>
-          <span class="project-link">jardineria-lino.vercel.app <i class="bi bi-box-arrow-up-right"></i></span>
-        </a>
-        <a class="project-card reveal" href="https://metodo-mac-os.vercel.app/" target="_blank" rel="noopener">
-          <div class="project-tag">En producción · Vercel</div>
-          <h3>Método MAC-OS</h3>
-          <p>
-            Landing de conversión para un coach de fitness: reserva de llamadas en Calendly.
-            Vídeo de presentación con fachada clicable servido desde el propio dominio,
-            menú fijo, animaciones al bajar y Google Analytics con banner de consentimiento
-            y atribución UTM. HTML y CSS en línea, sin frameworks.
-          </p>
-          <span class="project-link">metodo-mac-os.vercel.app <i class="bi bi-box-arrow-up-right"></i></span>
-        </a>
-        <a class="project-card reveal" href="https://github.com/alejandrohi03/mesaflow-pos" target="_blank" rel="noopener">
-          <div class="project-tag">Código · GitHub</div>
-          <h3>MesaFlow POS</h3>
-          <p>
-            TPV para bares y restaurantes: mapa de mesas, comandas por líneas,
-            pantalla de cocina y vista PDA de camarero. React, TypeScript y Vite,
-            con sincronización opcional vía Supabase.
-          </p>
-          <span class="project-link">Ver código <i class="bi bi-github"></i></span>
-        </a>
+    <!-- ===== FORMACIÓN ===== -->
+    <section class="section" id="formacion">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-rail">
+            <h2 class="section-title">Formación</h2>
+          </div>
+          <div class="section-body">
+            <ul class="records">
+              <li class="record reveal">
+                <span class="record-year">2022 — 2024</span>
+                <div class="record-main">
+                  <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+                  <p>Java, .NET, bases de datos y desarrollo móvil.</p>
+                </div>
+              </li>
+              <li class="record reveal">
+                <span class="record-year">2019 — 2022</span>
+                <div class="record-main">
+                  <h3>Bachillerato</h3>
+                  <p>IES Infante don Fadrique. Base académica en matemáticas, tecnología e informática.</p>
+                </div>
+              </li>
+              <li class="record reveal">
+                <span class="record-year">Idiomas</span>
+                <div class="record-main">
+                  <h3>Inglés — nivel A1</h3>
+                  <p>Nivel básico, en mejora continua.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== CONTACTO ===== -->
-  <section class="section" id="contacto">
-    <div class="container">
-      <h2 class="section-title">Contacto</h2>
-      <p class="contact-intro">
-        ¿Hablamos? Puedes contactarme por cualquiera de estos medios:
-      </p>
-      <div class="contact-grid">
-        <a class="contact-card reveal" href="mailto:alejan_hi@hotmail.com">
-          <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
-          <h3>Email</h3>
-          <p>alejan_hi@hotmail.com</p>
-        </a>
-        <a class="contact-card reveal" href="tel:+34633096127">
-          <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
-          <h3>Teléfono</h3>
-          <p>+34 633 096 127</p>
-        </a>
-        <a class="contact-card reveal" href="https://www.linkedin.com/in/alejandro-hidalgo-izquierdo" target="_blank" rel="noopener">
-          <div class="contact-icon"><i class="bi bi-linkedin"></i></div>
-          <h3>LinkedIn</h3>
-          <p>alejandro-hidalgo-izquierdo</p>
-        </a>
-        <a class="contact-card reveal" href="https://github.com/alejandrohi03" target="_blank" rel="noopener">
-          <div class="contact-icon"><i class="bi bi-github"></i></div>
-          <h3>GitHub</h3>
-          <p>github.com/alejandrohi03</p>
-        </a>
+    <!-- ===== HABILIDADES ===== -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-rail">
+            <h2 class="section-title">Habilidades</h2>
+          </div>
+          <div class="section-body">
+            <div class="skills">
+              <div class="skill-group reveal">
+                <h3>Lenguajes y frameworks</h3>
+                <div class="skill-tags">
+                  <span class="tag is-core">C#</span>
+                  <span class="tag is-core">.NET Framework</span>
+                  <span class="tag is-core">Java</span>
+                  <span class="tag">WinForms</span>
+                  <span class="tag">DevExpress</span>
+                  <span class="tag">Xamarin</span>
+                  <span class="tag">Android Studio</span>
+                </div>
+              </div>
+              <div class="skill-group reveal">
+                <h3>Datos y herramientas</h3>
+                <div class="skill-tags">
+                  <span class="tag is-core">SQL Server</span>
+                  <span class="tag is-core">Entity Framework</span>
+                  <span class="tag">LINQ</span>
+                  <span class="tag">Procedimientos almacenados</span>
+                  <span class="tag">Git</span>
+                  <span class="tag">Plastic SCM</span>
+                  <span class="tag">Visual Studio</span>
+                </div>
+              </div>
+              <div class="skill-group reveal">
+                <h3>Competencias personales</h3>
+                <div class="skill-tags">
+                  <span class="tag">Capacidad analítica</span>
+                  <span class="tag">Mejora continua</span>
+                  <span class="tag">Atención al cliente</span>
+                  <span class="tag">Comunicación</span>
+                  <span class="tag">Trabajo en equipo</span>
+                  <span class="tag">Resolución de problemas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="cv-download">
-        <a class="btn btn-primary" href="mailto:alejan_hi@hotmail.com?subject=Solicitud%20de%20CV">
-          <i class="bi bi-envelope-paper"></i> Solicitar CV
-        </a>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-rail">
+            <h2 class="section-title">Proyectos</h2>
+            <p class="rail-note">Trabajo real, en producción o con código abierto.</p>
+          </div>
+          <div class="section-body">
+            <ul class="projects">
+              <li class="reveal">
+                <a class="project-row" href="https://ah-trainer.com/" target="_blank" rel="noopener">
+                  <div class="project-head">
+                    <h3>AH-Trainer</h3>
+                    <span class="project-stack">Next.js · Vercel</span>
+                  </div>
+                  <p>Web para un entrenador personal online, publicada con dominio propio.</p>
+                  <span class="project-foot">
+                    <span class="project-status is-live">En producción</span>
+                    <span class="project-host">ah-trainer.com <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></span>
+                  </span>
+                </a>
+              </li>
+              <li class="reveal">
+                <a class="project-row" href="https://compe-restaurante.vercel.app/" target="_blank" rel="noopener">
+                  <div class="project-head">
+                    <h3>La Competencia</h3>
+                    <span class="project-stack">Next.js · Vercel</span>
+                  </div>
+                  <p>Web de restaurante y pizzería artesanal con carta digital.</p>
+                  <span class="project-foot">
+                    <span class="project-status is-live">En producción</span>
+                    <span class="project-host">compe-restaurante.vercel.app <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></span>
+                  </span>
+                </a>
+              </li>
+              <li class="reveal">
+                <a class="project-row" href="https://jardineria-lino.vercel.app/" target="_blank" rel="noopener">
+                  <div class="project-head">
+                    <h3>Lino Jardinería</h3>
+                    <span class="project-stack">Next.js · SEO local</span>
+                  </div>
+                  <p>
+                    Web corporativa para un negocio real de jardinería en Castilla-La Mancha: galería de
+                    trabajos en vídeo, FAQ con datos estructurados (schema.org), SEO local, Open Graph,
+                    sitemap y barra de llamada fija en móvil.
+                  </p>
+                  <span class="project-foot">
+                    <span class="project-status is-live">En producción</span>
+                    <span class="project-host">jardineria-lino.vercel.app <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></span>
+                  </span>
+                </a>
+              </li>
+              <li class="reveal">
+                <a class="project-row" href="https://metodo-mac-os.vercel.app/" target="_blank" rel="noopener">
+                  <div class="project-head">
+                    <h3>Método MAC-OS</h3>
+                    <span class="project-stack">HTML y CSS · sin frameworks</span>
+                  </div>
+                  <p>
+                    Landing de conversión para un coach de fitness: reserva de llamadas en Calendly, vídeo
+                    de presentación con fachada clicable servido desde el propio dominio, menú fijo,
+                    animaciones al bajar y Google Analytics con consentimiento y atribución UTM.
+                  </p>
+                  <span class="project-foot">
+                    <span class="project-status is-live">En producción</span>
+                    <span class="project-host">metodo-mac-os.vercel.app <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></span>
+                  </span>
+                </a>
+              </li>
+              <li class="reveal">
+                <a class="project-row" href="https://github.com/alejandrohi03/mesaflow-pos" target="_blank" rel="noopener">
+                  <div class="project-head">
+                    <h3>MesaFlow POS</h3>
+                    <span class="project-stack">React · TypeScript · Vite</span>
+                  </div>
+                  <p>
+                    TPV para bares y restaurantes: mapa de mesas, comandas por líneas, pantalla de cocina
+                    y vista PDA de camarero, con sincronización opcional vía Supabase.
+                  </p>
+                  <span class="project-foot">
+                    <span class="project-status">Código abierto</span>
+                    <span class="project-host">github.com <i class="bi bi-github" aria-hidden="true"></i></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-grid">
+          <div class="section-rail">
+            <h2 class="section-title">Contacto</h2>
+            <p class="rail-note">Respondo el mismo día.</p>
+          </div>
+          <div class="section-body">
+            <ul class="contact-list">
+              <li class="reveal">
+                <a class="contact-row" href="mailto:alejan_hi@hotmail.com">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">alejan_hi@hotmail.com</span>
+                </a>
+              </li>
+              <li class="reveal">
+                <a class="contact-row" href="tel:+34633096127">
+                  <span class="contact-label">Teléfono</span>
+                  <span class="contact-value">+34 633 096 127</span>
+                </a>
+              </li>
+              <li class="reveal">
+                <a class="contact-row" href="https://www.linkedin.com/in/alejandro-hidalgo-izquierdo" target="_blank" rel="noopener">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">alejandro-hidalgo-izquierdo</span>
+                </a>
+              </li>
+              <li class="reveal">
+                <a class="contact-row" href="https://github.com/alejandrohi03" target="_blank" rel="noopener">
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">@alejandrohi03</span>
+                </a>
+              </li>
+            </ul>
+            <a class="btn btn-primary" href="mailto:alejan_hi@hotmail.com?subject=Solicitud%20de%20CV">
+              <i class="bi bi-envelope-paper" aria-hidden="true"></i> Pedir mi CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p id="footer-text">© 2026 Alejandro Hidalgo Izquierdo</p>
+    <div class="container footer-inner">
+      <span class="footer-mark">AH<span class="logo-dot">.</span></span>
+      <p id="footer-text">© 2026 Alejandro Hidalgo Izquierdo</p>
+      <p>Hecho a mano: HTML, CSS y JavaScript, sin frameworks.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
